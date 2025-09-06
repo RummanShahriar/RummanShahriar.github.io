@@ -3,186 +3,133 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rumman Shahriar | Portfolio</title>
+  <title>Md. Rumman Shahriar | Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70">
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+<nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
   <div class="container">
-    <a class="navbar-brand fw-bold" href="#">Rumman Shahriar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    <a class="navbar-brand fw-bold" href="#">Rumman</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
+    <div class="collapse navbar-collapse" id="navmenu">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="#objective">Objective</a></li>
-        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experience">Journey</a></li>
         <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
         <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-        <li class="nav-item"><a class="nav-link" href="#awards">Awards</a></li>
-        <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<!-- Hero -->
-<header class="hero d-flex align-items-center text-center text-white">
-  <div class="container">
-    <img src="assets/profile.jpg" alt="Profile" class="rounded-circle mb-3" width="150">
+<!-- Hero Section -->
+<header class="hero text-center d-flex align-items-center justify-content-center text-white">
+  <div>
+    <h5>Hello, I'm</h5>
     <h1 class="fw-bold">Md. Rumman Shahriar</h1>
-    <p class="lead">Research Interests: NLP | Machine Learning | Computer Vision</p>
-    <a href="Md_Rumman_Shahriar_CV.pdf" class="btn btn-primary btn-lg mt-3" download>📄 Download Resume</a>
+    <p class="lead">A passionate problem solver building impactful projects in AI, ML & Web Development.</p>
+    <a href="Md_Rumman_Shahriar_CV.pdf" class="btn btn-primary btn-lg mt-3" download>📄 Download CV</a>
+    <div class="mt-4">
+      <a href="#about" class="btn btn-outline-light">Scroll Down</a>
+    </div>
   </div>
 </header>
 
-<!-- Objective -->
-<section id="objective" class="py-5 text-center">
-  <div class="container">
-    <h2 class="fw-bold mb-4">Objective</h2>
-    <p class="lead">Computer Science graduate with strong foundations in data analysis and machine learning, passionate about continuous learning and motivated to transform data insights into practical strategies that drive business value.</p>
+<!-- About Me -->
+<section id="about" class="py-5">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4">About Me</h2>
+    <p class="lead">Hello! I'm Rumman, a Computer Science graduate passionate about learning and applying technology to solve real-world problems. My research interests include Natural Language Processing, Machine Learning, Computer Vision, and Image Processing.</p>
   </div>
 </section>
 
-<!-- Experience -->
+<!-- Experience / Journey -->
 <section id="experience" class="py-5 bg-light">
   <div class="container">
-    <h2 class="fw-bold mb-4 text-center">Experience</h2>
-    <div class="card shadow p-3 mb-3">
-      <h5>Student Tutor — BRAC University (Oct. 2024 – May 2025)</h5>
-      <ul>
-        <li>Assisted students in understanding CSE110 fundamentals.</li>
-        <li>Conducted one-on-one and group sessions.</li>
-        <li>Guided students on debugging and writing optimized code.</li>
-      </ul>
+    <h2 class="fw-bold text-center mb-5">My Journey</h2>
+    <div class="timeline">
+      <div class="mb-4">
+        <h5>Student Tutor — BRAC University <span class="text-muted">(Oct. 2024 – May 2025)</span></h5>
+        <p>Assisted students in CSE110, provided guidance on problem-solving, debugging, and coding practices.</p>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- Education -->
 <section id="education" class="py-5">
-  <div class="container">
-    <h2 class="fw-bold mb-4 text-center">Education</h2>
-    <ul class="list-group">
-      <li class="list-group-item"><b>BSc in Computer Science</b>, BRAC University — CGPA: 3.96/4.00</li>
-      <li class="list-group-item">HSC — Notre Dame College, GPA 5.00</li>
-      <li class="list-group-item">SSC — Adarsha School, GPA 5.00</li>
-    </ul>
-  </div>
-</section>
-
-<!-- Projects -->
-<section id="projects" class="py-5 bg-light">
-  <div class="container">
-    <h2 class="fw-bold text-center mb-5">Academic Projects</h2>
-    <div class="row g-4">
-
-      <!-- Example Project -->
-      <div class="col-md-4">
-        <div class="card shadow h-100">
-          <img src="assets/project1.png" class="card-img-top" alt="Project">
-          <div class="card-body">
-            <h5 class="card-title">Hospital Management System</h5>
-            <p class="card-text">Flask & MySQL-based web app for patients, doctors, and billing management.</p>
-            <a href="https://github.com/RummanShahriar/Hospital_Management_System.git" class="btn btn-outline-dark btn-sm">GitHub</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Add other projects similarly -->
-
-    </div>
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4">Education</h2>
+    <p><b>B.Sc. in Computer Science</b>, BRAC University (2021–2025), CGPA: 3.96/4.00</p>
+    <p><b>HSC</b>, Notre Dame College (2020), GPA 5.00</p>
+    <p><b>SSC</b>, Adarsha School (2018), GPA 5.00</p>
   </div>
 </section>
 
 <!-- Skills -->
-<section id="skills" class="py-5">
+<section id="skills" class="py-5 bg-light">
   <div class="container text-center">
-    <h2 class="fw-bold mb-4">Technical Skills</h2>
-    <p><b>Languages:</b> Python, Java, MySQL</p>
-    <p><b>Web:</b> HTML, CSS, Bootstrap, PHP, Flask</p>
-    <p><b>AI/ML:</b> Scikit-learn, TensorFlow, Keras, CNN, NLP</p>
+    <h2 class="fw-bold mb-4">My Abilities</h2>
+    <p><b>Programming:</b> Python, Java, MySQL</p>
+    <p><b>AI/ML:</b> TensorFlow, Keras, Scikit-learn, NLP</p>
+    <p><b>Web Development:</b> HTML, CSS, Bootstrap, Flask, PHP</p>
     <p><b>Tools:</b> Git, GitHub, VS Code, LaTeX</p>
   </div>
 </section>
 
-<!-- Awards -->
-<section id="awards" class="py-5 bg-light">
+<!-- Projects -->
+<section id="projects" class="py-5">
   <div class="container">
-    <h2 class="fw-bold text-center mb-4">Honors & Awards</h2>
-    <ul>
-      <li>Vice Chancellor’s List – BRAC University</li>
-      <li>Dean’s List (10 semesters)</li>
-      <li>Merit-Based Scholarship (75–100% waiver)</li>
-      <li>Dhaka Board General & Talent Pool Scholarships</li>
-    </ul>
+    <h2 class="fw-bold text-center mb-5">My Projects</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card shadow h-100">
+          <div class="card-body">
+            <h5 class="card-title">Hospital Management System</h5>
+            <p class="card-text">Flask & MySQL-based web app to manage patients, doctors, and billing.</p>
+            <a href="https://github.com/RummanShahriar/Hospital_Management_System.git" class="btn btn-outline-dark btn-sm">View GitHub</a>
+          </div>
+        </div>
+      </div>
+      <!-- Add more project cards here -->
+    </div>
   </div>
 </section>
 
-<!-- Achievements -->
-<section id="achievements" class="py-5">
-  <div class="container">
-    <h2 class="fw-bold text-center mb-4">Competitions & Achievements</h2>
-    <ul>
-      <li>Executive Member, Notre Dame College Eco and Space Club (2018–2020)</li>
-      <li>2nd Prize — Digital Udbhaboni Mela (School Attendance System Project)</li>
-      <li>2nd Place — National Science Fair (2016–2017, Narayanganj Region)</li>
-    </ul>
+<!-- Research -->
+<section id="research" class="py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4">Research Interests</h2>
+    <p>NLP, Machine Learning, Computer Vision, Image Processing</p>
   </div>
 </section>
 
 <!-- Contact -->
-<section id="contact" class="py-5 bg-dark text-white text-center">
+<section id="contact" class="py-5 text-center">
   <div class="container">
-    <h2 class="fw-bold mb-4">Contact</h2>
-    <p>Email: <a href="mailto:rummanshahriarrumman@gmail.com" class="text-white">rummanshahriarrumman@gmail.com</a></p>
+    <h2 class="fw-bold mb-4">Get in Touch</h2>
+    <p>Email: <a href="mailto:rummanshahriarrumman@gmail.com">rummanshahriarrumman@gmail.com</a></p>
     <p>
-      <a href="https://github.com/RummanShahriar" class="btn btn-light btn-sm me-2">GitHub</a>
-      <a href="https://linkedin.com/in/rumman" class="btn btn-primary btn-sm">LinkedIn</a>
+      <a href="https://github.com/RummanShahriar" class="btn btn-dark btn-sm me-2"><i class="bi bi-github"></i> GitHub</a>
+      <a href="https://linkedin.com/in/rumman" class="btn btn-primary btn-sm"><i class="bi bi-linkedin"></i> LinkedIn</a>
     </p>
   </div>
 </section>
 
 <!-- Footer -->
-<footer class="bg-dark text-white pt-5 pb-3">
-  <div class="container">
-    <div class="row">
-
-      <!-- About -->
-      <div class="col-md-4 mb-3">
-        <h5 class="fw-bold">Rumman Shahriar</h5>
-        <p class="small text-muted">Computer Science Graduate | AI & Web Developer</p>
-      </div>
-
-      <!-- Quick Links -->
-      <div class="col-md-4 mb-3">
-        <h5 class="fw-bold">Quick Links</h5>
-        <ul class="list-unstyled">
-          <li><a href="#objective" class="text-white text-decoration-none">Objective</a></li>
-          <li><a href="#projects" class="text-white text-decoration-none">Projects</a></li>
-          <li><a href="#skills" class="text-white text-decoration-none">Skills</a></li>
-          <li><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
-        </ul>
-      </div>
-
-      <!-- Social -->
-      <div class="col-md-4 mb-3">
-        <h5 class="fw-bold">Connect</h5>
-        <a href="mailto:rummanshahriarrumman@gmail.com" class="text-white me-3 fs-5"><i class="bi bi-envelope"></i></a>
-        <a href="https://github.com/RummanShahriar" class="text-white me-3 fs-5"><i class="bi bi-github"></i></a>
-        <a href="https://linkedin.com/in/rumman" class="text-white fs-5"><i class="bi bi-linkedin"></i></a>
-      </div>
-    </div>
-
-    <hr class="border-secondary">
-    <p class="text-center small mb-0">&copy; 2025 Rumman Shahriar. All Rights Reserved.</p>
-  </div>
+<footer class="bg-dark text-white text-center py-3">
+  <p class="mb-0">© 2025 Md. Rumman Shahriar | Portfolio Website</p>
 </footer>
 
-<!-- Bootstrap Icons -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
