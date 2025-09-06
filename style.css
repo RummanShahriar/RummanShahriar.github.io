@@ -1,0 +1,9 @@
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url('https://source.unsplash.com/1600x900/?technology,coding') center/cover no-repeat;
+}
+.hero img {
+  border: 4px solid #fff;
+}
