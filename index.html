@@ -6,284 +6,381 @@
   <title>Md. Rumman Shahriar — Portfolio</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
+  <!-- bootstrap icons for small icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
 <body>
 
-<!-- NAVBAR -->
-<header class="site-header">
-  <div class="container nav-row">
-    <div class="brand">
-      <div class="brand-name">Rumman</div>
-      <div class="brand-sub">NLP · Machine Learning · Vision</div>
-    </div>
-
-    <button id="hambtn" class="hambtn" aria-label="Toggle menu" aria-expanded="false">☰</button>
-
-    <nav id="site-nav" class="site-nav">
-      <ul>
-        <li><a href="#hero" data-target="hero" class="nav-link active">Home</a></li>
-        <li><a href="#about" data-target="about" class="nav-link">About</a></li>
-        <li><a href="#experience" data-target="experience" class="nav-link">Experience</a></li>
-        <li><a href="#education" data-target="education" class="nav-link">Education</a></li>
-        <li><a href="#projects" data-target="projects" class="nav-link">Projects</a></li>
-        <li><a href="#skills" data-target="skills" class="nav-link">Skills</a></li>
-        <li><a href="#awards" data-target="awards" class="nav-link">Awards</a></li>
-        <li><a href="#contact" data-target="contact" class="nav-link">Contact</a></li>
-      </ul>
-    </nav>
-
-    <div class="nav-actions">
-      <a class="btn btn-purple" href="Md_Rumman_Shahriar_CV.pdf" download>Download CV</a>
-    </div>
-  </div>
-</header>
-
-<!-- HERO -->
-<section id="hero" class="section hero">
-  <div class="container hero-grid">
-    <div class="hero-left" data-reveal>
-      <p class="hello">Hello, I'm</p>
-      <h1 class="display-name">Md. Rumman Shahriar</h1>
-      <p class="subtitle">Problem-solver building production-ready ML systems and research prototypes.</p>
-      <p class="short-bio">Research Interests: <strong>NLP</strong> · <strong>Machine Learning</strong> · <strong>Image Processing</strong> · <strong>Computer Vision</strong></p>
-      <div class="hero-ctas">
-        <a class="btn btn-purple" href="Md_Rumman_Shahriar_CV.pdf" download>📄 Download CV</a>
+  <!-- HEADER / NAV -->
+  <header id="site-header" class="site-header">
+    <div class="container nav-row">
+      <div class="brand" tabindex="0" role="button" aria-label="Home">
+        <div class="brand-name">Rumman</div>
+        <div class="brand-sub">NLP · Machine Learning · Vision</div>
       </div>
-      <p class="contact-email">Email: <a href="mailto:rummanshahriarrumman@gmail.com" class="email-purple">rummanshahriarrumman@gmail.com</a></p>
-    </div>
 
-    <aside class="hero-right" data-reveal>
-      <div class="profile-card">
-        <div class="profile-img-wrap">
-          <img src="assets/profile.jpg" alt="Md. Rumman Shahriar" class="profile-img" />
-        </div>
-        <div class="profile-info">
-          <h3>Md. Rumman Shahriar</h3>
-          <p class="muted">BSc — Computer Science, BRAC University</p>
-          <p class="small muted">+8801933264654</p>
-          <div class="social-row">
-            <a href="https://github.com/RummanShahriar" target="_blank" class="social-link github"><i class="bi bi-github"></i> GitHub</a>
-            <a href="https://www.linkedin.com/in/rumman" target="_blank" class="social-link linkedin"><i class="bi bi-linkedin"></i> LinkedIn</a>
+      <button id="hambtn" class="hambtn" aria-label="Toggle menu" aria-expanded="false">☰</button>
+
+      <nav id="site-nav" class="site-nav" role="navigation" aria-label="Main navigation">
+        <ul>
+          <li><a href="#hero"    class="nav-link" data-target="hero">Home</a></li>
+          <li><a href="#about"   class="nav-link" data-target="about">About</a></li>
+          <li><a href="#experience" class="nav-link" data-target="experience">Experience</a></li>
+          <li><a href="#education"  class="nav-link" data-target="education">Education</a></li>
+          <li><a href="#projects"   class="nav-link" data-target="projects">Projects</a></li>
+          <li><a href="#skills"     class="nav-link" data-target="skills">Skills</a></li>
+          <li><a href="#awards"     class="nav-link" data-target="awards">Awards</a></li>
+          <li><a href="#contact"    class="nav-link" data-target="contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn btn-purple" href="Md_Rumman_Shahriar_CV.pdf" download>Download CV</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section id="hero" class="section hero tone-hero">
+      <div class="container hero-grid">
+
+        <div class="hero-left" data-reveal>
+          <p class="hello">Hello, I'm</p>
+          <h1 class="display-name">Md. Rumman Shahriar</h1>
+          <p class="subtitle">Problem-solver building production-ready ML systems & research prototypes</p>
+
+          <p class="short-bio">
+            Research Interests: <strong>Natural Language Processing</strong>, <strong>Machine Learning</strong>, <strong>Image Processing</strong>, <strong>Computer Vision</strong>.
+            I focus on reproducible experiments, deployable models, and clean engineering.
+          </p>
+
+          <div class="hero-ctas">
+            <a class="btn btn-purple" href="Md_Rumman_Shahriar_CV.pdf" download>📄 Download CV</a>
+            <a class="btn btn-outline" id="jump-about" href="#about">About me ↓</a>
           </div>
+
+          <p class="contact-email">Email: <a class="email-purple" href="mailto:rummanshahriarrumman@gmail.com">rummanshahriarrumman@gmail.com</a></p>
+        </div>
+
+        <aside class="hero-right" data-reveal>
+          <div class="profile-card">
+            <div class="profile-img-wrap">
+              <img src="assets/profile.jpg" alt="Md. Rumman Shahriar" class="profile-img" />
+            </div>
+
+            <div class="profile-info">
+              <h3>Md. Rumman Shahriar</h3>
+              <p class="muted">BSc — Computer Science, BRAC University (2021–2025)</p>
+              <p class="small muted">+8801933264654</p>
+
+              <div class="social-row">
+                <a class="social-link github" href="https://github.com/RummanShahriar" target="_blank" rel="noopener">
+                  <i class="bi bi-github"></i> GitHub
+                </a>
+                <a class="social-link linkedin" href="https://www.linkedin.com/in/rumman" target="_blank" rel="noopener">
+                  <i class="bi bi-linkedin"></i> LinkedIn
+                </a>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section tone-1">
+      <div class="container" data-reveal>
+        <h2 class="section-title">About Me</h2>
+        <p>
+          Computer Science graduate with strong foundations in data analysis and machine learning. I am passionate about continuous learning
+          and applying AI to practical problems — from healthcare imaging pipelines to web-based management systems.
+        </p>
+
+        <div class="about-quick">
+          <div><strong>Education:</strong> BRAC University — B.Sc. Computer Science (2021–2025), CGPA: 3.96/4.00</div>
+          <div><strong>Honors:</strong> Vice Chancellor’s List · Dean’s List · Merit-based scholarship</div>
         </div>
       </div>
-    </aside>
-  </div>
-</section>
+    </section>
 
-<!-- ABOUT -->
-<section id="about" class="section tone-1">
-  <div class="container" data-reveal>
-    <h2 class="section-title">About Me</h2>
-    <p>Hello! I'm Rumman, a Computer Science graduate from BRAC University. I love building projects that merge Artificial Intelligence, Web Development, and Research. My research interests include <b>Natural Language Processing, Machine Learning, Image Processing, and Computer Vision</b>.</p>
-  </div>
-</section>
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section tone-2">
+      <div class="container" data-reveal>
+        <h2 class="section-title">Experience</h2>
 
-<!-- EXPERIENCE -->
-<section id="experience" class="section tone-2">
-  <div class="container" data-reveal>
-    <h2 class="section-title">Experience</h2>
-    <div class="timeline">
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-body">
-          <h3>Student Tutor — BRAC University</h3>
-          <p class="period muted">Oct 2024 — May 2025</p>
-          <ul>
-            <li>Guided students in CSE110 (Programming I).</li>
-            <li>Helped with debugging, problem-solving, and coding best practices.</li>
-          </ul>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-body">
+              <h3>Student Tutor — BRAC University</h3>
+              <p class="period muted">Oct 2024 — May 2025 | Dhaka, Bangladesh</p>
+              <ul>
+                <li>Assisted students in CSE110 (Programming Language I).</li>
+                <li>One-on-one & small-group tutoring to improve problem-solving and debugging.</li>
+                <li>Provided guidance on assessments and writing efficient code.</li>
+              </ul>
+            </div>
+          </div>
+          <!-- additional items can be appended here -->
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- EDUCATION -->
-<section id="education" class="section tone-3">
-  <div class="container" data-reveal>
-    <h2 class="section-title">Education</h2>
-    <div class="cards">
-      <div class="card-edu"><h4>B.Sc. in Computer Science</h4><p>BRAC University · 2021–2025</p><p>CGPA: 3.96</p></div>
-      <div class="card-edu"><h4>HSC</h4><p>Notre Dame College · 2020</p><p>GPA: 5.00</p></div>
-      <div class="card-edu"><h4>SSC</h4><p>Adarsha School · 2018</p><p>GPA: 5.00</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects" class="section tone-1">
-  <div class="container" data-reveal>
-    <h2 class="section-title">Projects</h2>
-    <div class="grid">
-      <!-- Hospital Management -->
-      <div class="project-card">
-        <h4>Hospital Management System</h4>
-        <p class="muted">Flask · MySQL · HTML · CSS · Vercel</p>
-        <p>Web application for managing patients, doctors, appointments, and billing.</p>
-        <div class="proj-actions">
-          <a class="btn btn-crimson" href="https://github.com/RummanShahriar/Hospital_Management_System.git">GitHub</a>
-          <a class="btn btn-purple" href="assets/hms_doc.pdf">Documentation</a>
+    <!-- EDUCATION -->
+    <section id="education" class="section tone-3">
+      <div class="container" data-reveal>
+        <h2 class="section-title">Education</h2>
+        <div class="cards">
+          <div class="card-edu"><h4>B.Sc. in Computer Science</h4><p class="muted">BRAC University — 2021–2025</p><p>CGPA: <strong>3.96 / 4.00</strong></p></div>
+          <div class="card-edu"><h4>Higher Secondary Certificate (HSC)</h4><p class="muted">Notre Dame College — 2020</p><p>GPA: <strong>5.00 / 5.00</strong></p></div>
+          <div class="card-edu"><h4>Secondary School Certificate (SSC)</h4><p class="muted">Adarsha School — 2018</p><p>GPA: <strong>5.00 / 5.00</strong></p></div>
         </div>
       </div>
+    </section>
 
-      <!-- Bangla Digits -->
-      <div class="project-card">
-        <h4>Bangla Handwritten Digit Recognition</h4>
-        <p class="muted">TensorFlow · Keras · CNN</p>
-        <p>CNN for classifying Bangla handwritten digits.</p>
-        <div class="proj-actions">
-          <a class="btn btn-crimson" href="#">GitHub</a>
-          <a class="btn btn-purple" href="assets/bangla_digits_paper.pdf">Paper</a>
+    <!-- PROJECTS -->
+    <section id="projects" class="section tone-1">
+      <div class="container" data-reveal>
+        <h2 class="section-title">Selected Projects</h2>
+
+        <div class="grid">
+          <!-- Hospital Management System -->
+          <article class="project-card">
+            <div class="proj-media"><img src="assets/project_hms.png" alt="Hospital Management System"></div>
+            <div class="proj-body">
+              <h4>Hospital Management System</h4>
+              <p class="muted">Oct 2024 — Feb 2025 · Flask · MySQL · HTML/CSS · Vercel</p>
+              <p>Designed and developed a web application for managing patients, doctors, appointments, and billing. Backend in Flask & MySQL, responsive frontend and Figma prototypes.</p>
+              <div class="proj-actions">
+                <a class="btn btn-crimson" href="https://github.com/RummanShahriar/Hospital_Management_System.git" target="_blank">GitHub</a>
+                <a class="btn btn-purple" href="assets/hms_doc.pdf" target="_blank">Documentation</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Bangla Handwritten Digit Recognition -->
+          <article class="project-card">
+            <div class="proj-media"><img src="assets/project_bangla_digits.png" alt="Bangla digits"></div>
+            <div class="proj-body">
+              <h4>Bangla Handwritten Digit Recognition</h4>
+              <p class="muted">Apr 2025 — Jun 2025 · TensorFlow · Keras · CNN</p>
+              <p>Built and trained a CNN to classify Bangla handwritten digits with preprocessing and hyperparameter tuning.</p>
+              <div class="proj-actions">
+                <a class="btn btn-crimson" href="https://github.com/RummanShahriar/An-Efficient-Deep-Learning-Model-for-BanglaHandwritten-Digit-Recognition.git" target="_blank">GitHub</a>
+                <a class="btn btn-purple" href="assets/bangla_digits_paper.pdf" target="_blank">Paper</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Breast Ultrasound Segmentation -->
+          <article class="project-card">
+            <div class="proj-media"><img src="assets/project_breast_ultrasound.png" alt="Breast Ultrasound"></div>
+            <div class="proj-body">
+              <h4>Breast Ultrasound Image Segmentation & Classification</h4>
+              <p class="muted">Jan 2025 — Jul 2025 · U-Net · TensorFlow</p>
+              <p>Applied U-Net for segmentation and classification (benign vs malignant) with augmentation and validation.</p>
+              <div class="proj-actions">
+                <a class="btn btn-crimson" href="https://github.com/RummanShahriar/Breast-Ultrasound-Image-Segmentation-Classification.git" target="_blank">GitHub</a>
+                <a class="btn btn-purple" href="assets/breast_ultrasound_arch.pdf" target="_blank">Architecture</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Tumor Detection -->
+          <article class="project-card">
+            <div class="proj-media"><img src="assets/project_tumor_detection.png" alt="Tumor Detection"></div>
+            <div class="proj-body">
+              <h4>Tumor Detection for Potential Breast Cancer Using ML</h4>
+              <p class="muted">Oct 2024 — Dec 2024 · Python · ML</p>
+              <p>ML-based pipeline for early tumor detection, analytics & visualization for awareness.</p>
+              <div class="proj-actions">
+                <a class="btn btn-crimson" href="#" target="_blank">GitHub</a>
+                <a class="btn btn-purple" href="assets/tumor_paper.pdf" target="_blank">Paper</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- CKD Detection -->
+          <article class="project-card">
+            <div class="proj-media"><img src="assets/project_ckd.png" alt="CKD detection"></div>
+            <div class="proj-body">
+              <h4>Comparative Analysis of CKD Detection</h4>
+              <p class="muted">Jan 2024 — Mar 2024 · Scikit-learn · SVM / RF / KNN / DNN</p>
+              <p>Compared multiple ML models for early kidney disease detection; evaluation used accuracy, precision, recall, F1.</p>
+              <div class="proj-actions">
+                <a class="btn btn-crimson" href="#" target="_blank">GitHub</a>
+                <a class="btn btn-purple" href="#" target="_blank">YouTube</a>
+                <a class="btn btn-purple" href="assets/ckd_paper.pdf" target="_blank">Paper</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Alien Shooter Game -->
+          <article class="project-card">
+            <div class="proj-media"><img src="assets/project_alien_shooter.png" alt="Alien Shooter"></div>
+            <div class="proj-body">
+              <h4>Alien Shooter Game</h4>
+              <p class="muted">Apr 2024 — Jun 2024 · Python · OpenGL</p>
+              <p>2D shooter game with dynamic projectiles, collision detection, power-ups and smooth UI.</p>
+              <div class="proj-actions">
+                <a class="btn btn-crimson" href="#" target="_blank">GitHub</a>
+                <a class="btn btn-purple" href="assets/alien_manual.pdf" target="_blank">Manual</a>
+              </div>
+            </div>
+          </article>
+
         </div>
       </div>
+    </section>
 
-      <!-- Breast Ultrasound -->
-      <div class="project-card">
-        <h4>Breast Ultrasound Segmentation</h4>
-        <p class="muted">U-Net · TensorFlow</p>
-        <p>Applied U-Net for breast ultrasound image segmentation and classification.</p>
-        <div class="proj-actions">
-          <a class="btn btn-crimson" href="#">GitHub</a>
-          <a class="btn btn-purple" href="assets/breast_ultrasound_arch.pdf">Architecture</a>
+    <!-- SKILLS (chart-style) -->
+    <section id="skills" class="section tone-2">
+      <div class="container" data-reveal>
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skill-charts">
+          <!-- Group: Microsoft Office & Productivity -->
+          <div class="skill-group">
+            <h4>Microsoft Office & Productivity</h4>
+            <div class="skill-row"><span>Microsoft Excel</span><div class="bar"><div class="fill" style="width:92%"></div></div></div>
+            <div class="skill-row"><span>PowerPoint</span><div class="bar"><div class="fill" style="width:90%"></div></div></div>
+            <div class="skill-row"><span>Word</span><div class="bar"><div class="fill" style="width:88%"></div></div></div>
+            <div class="skill-row"><span>Slack</span><div class="bar"><div class="fill" style="width:80%"></div></div></div>
+          </div>
+
+          <!-- Languages -->
+          <div class="skill-group">
+            <h4>Languages</h4>
+            <div class="skill-row"><span>Python</span><div class="bar"><div class="fill" style="width:95%"></div></div></div>
+            <div class="skill-row"><span>Java</span><div class="bar"><div class="fill" style="width:82%"></div></div></div>
+            <div class="skill-row"><span>MySQL</span><div class="bar"><div class="fill" style="width:90%"></div></div></div>
+          </div>
+
+          <!-- Web Development -->
+          <div class="skill-group">
+            <h4>Web Development</h4>
+            <div class="skill-row"><span>HTML</span><div class="bar"><div class="fill" style="width:95%"></div></div></div>
+            <div class="skill-row"><span>CSS</span><div class="bar"><div class="fill" style="width:92%"></div></div></div>
+            <div class="skill-row"><span>Bootstrap</span><div class="bar"><div class="fill" style="width:88%"></div></div></div>
+            <div class="skill-row"><span>PHP</span><div class="bar"><div class="fill" style="width:78%"></div></div></div>
+            <div class="skill-row"><span>Flask</span><div class="bar"><div class="fill" style="width:90%"></div></div></div>
+          </div>
+
+          <!-- AI & ML -->
+          <div class="skill-group">
+            <h4>AI & ML</h4>
+            <div class="skill-row"><span>Scikit-learn</span><div class="bar"><div class="fill" style="width:90%"></div></div></div>
+            <div class="skill-row"><span>Pandas</span><div class="bar"><div class="fill" style="width:92%"></div></div></div>
+            <div class="skill-row"><span>NumPy</span><div class="bar"><div class="fill" style="width:94%"></div></div></div>
+            <div class="skill-row"><span>Matplotlib</span><div class="bar"><div class="fill" style="width:85%"></div></div></div>
+          </div>
+
+          <!-- Neural Networks & CV & NLP -->
+          <div class="skill-group">
+            <h4>Neural Networks & Deep Learning</h4>
+            <div class="skill-row"><span>TensorFlow</span><div class="bar"><div class="fill" style="width:88%"></div></div></div>
+            <div class="skill-row"><span>Keras</span><div class="bar"><div class="fill" style="width:86%"></div></div></div>
+
+            <h4 style="margin-top:14px">Computer Vision</h4>
+            <div class="skill-row"><span>CNNs</span><div class="bar"><div class="fill" style="width:87%"></div></div></div>
+            <div class="skill-row"><span>U-Net</span><div class="bar"><div class="fill" style="width:82%"></div></div></div>
+            <div class="skill-row"><span>Image Processing</span><div class="bar"><div class="fill" style="width:86%"></div></div></div>
+
+            <h4 style="margin-top:14px">Natural Language Processing</h4>
+            <div class="skill-row"><span>NLTK</span><div class="bar"><div class="fill" style="width:82%"></div></div></div>
+            <div class="skill-row"><span>Text Classification</span><div class="bar"><div class="fill" style="width:84%"></div></div></div>
+            <div class="skill-row"><span>Language Modeling</span><div class="bar"><div class="fill" style="width:80%"></div></div></div>
+            <div class="skill-row"><span>Tokenization & Parsing</span><div class="bar"><div class="fill" style="width:78%"></div></div></div>
+          </div>
+
+          <!-- Other Tools -->
+          <div class="skill-group">
+            <h4>Other Tools</h4>
+            <div class="skill-row"><span>Git</span><div class="bar"><div class="fill" style="width:94%"></div></div></div>
+            <div class="skill-row"><span>GitHub</span><div class="bar"><div class="fill" style="width:93%"></div></div></div>
+            <div class="skill-row"><span>VS Code</span><div class="bar"><div class="fill" style="width:92%"></div></div></div>
+            <div class="skill-row"><span>LaTeX</span><div class="bar"><div class="fill" style="width:80%"></div></div></div>
+          </div>
+
         </div>
       </div>
+    </section>
 
-      <!-- Tumor Detection -->
-      <div class="project-card">
-        <h4>Tumor Detection for Breast Cancer</h4>
-        <p class="muted">Python · ML</p>
-        <p>ML models for early detection of breast cancer tumors.</p>
-        <div class="proj-actions">
-          <a class="btn btn-crimson" href="#">GitHub</a>
-          <a class="btn btn-purple" href="assets/tumor_paper.pdf">Paper</a>
-        </div>
-      </div>
-
-      <!-- CKD Detection -->
-      <div class="project-card">
-        <h4>CKD Detection</h4>
-        <p class="muted">Scikit-learn · ML Models</p>
-        <p>Comparative study of ML models for early kidney disease detection.</p>
-        <div class="proj-actions">
-          <a class="btn btn-crimson" href="#">GitHub</a>
-          <a class="btn btn-purple" href="#">YouTube</a>
-          <a class="btn btn-purple" href="assets/ckd_paper.pdf">Paper</a>
-        </div>
-      </div>
-
-      <!-- Alien Shooter -->
-      <div class="project-card">
-        <h4>Alien Shooter Game</h4>
-        <p class="muted">Python · OpenGL</p>
-        <p>2D space shooter game with enemies, power-ups, and smooth gameplay.</p>
-        <div class="proj-actions">
-          <a class="btn btn-crimson" href="#">GitHub</a>
-          <a class="btn btn-purple" href="assets/alien_manual.pdf">Manual</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- SKILLS -->
-<section id="skills" class="section tone-2">
-  <div class="container" data-reveal>
-    <h2 class="section-title">Skills</h2>
-    <div class="skills-list">
-      <div>
-        <h4>Microsoft Office & Productivity</h4>
-        <ul><li>Excel</li><li>PowerPoint</li><li>Word</li><li>Slack</li></ul>
-      </div>
-      <div>
-        <h4>Languages</h4>
-        <ul><li>Python</li><li>Java</li><li>MySQL</li></ul>
-      </div>
-      <div>
-        <h4>Web Development</h4>
-        <ul><li>HTML</li><li>CSS</li><li>Bootstrap</li><li>PHP</li><li>Flask</li></ul>
-      </div>
-      <div>
-        <h4>AI & ML</h4>
-        <ul><li>Scikit-learn</li><li>Pandas</li><li>NumPy</li><li>Matplotlib</li></ul>
-      </div>
-      <div>
-        <h4>Neural Networks</h4>
-        <ul><li>TensorFlow</li><li>Keras</li></ul>
-      </div>
-      <div>
-        <h4>Computer Vision</h4>
-        <ul><li>CNNs</li><li>U-Net</li><li>Image Processing</li></ul>
-      </div>
-      <div>
-        <h4>NLP</h4>
-        <ul><li>NLTK</li><li>Text Classification</li><li>Language Modeling</li><li>Tokenization</li><li>Parsing</li></ul>
-      </div>
-      <div>
-        <h4>Other Tools</h4>
-        <ul><li>Git</li><li>GitHub</li><li>VS Code</li><li>LaTeX</li></ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- AWARDS -->
-<section id="awards" class="section tone-3">
-  <div class="container" data-reveal>
-    <h2 class="section-title">Honors & Awards</h2>
-    <ul>
-      <li>Vice Chancellor’s List — Outstanding academic performance</li>
-      <li>Dean’s List — CGPA above 3.9 in 10 semesters</li>
-      <li>Merit-Based Scholarship — 75–100% waiver</li>
-      <li>Dhaka Board General & Talent Pool Scholarships</li>
-    </ul>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="section tone-1">
-  <div class="container" data-reveal>
-    <h2 class="section-title">Contact</h2>
-    <p>Email: <a href="mailto:rummanshahriarrumman@gmail.com" class="email-purple">rummanshahriarrumman@gmail.com</a></p>
-    <p>Phone: +8801933264654</p>
-    <p>
-      <a class="social-link github" href="https://github.com/RummanShahriar"><i class="bi bi-github"></i> GitHub</a>
-      <a class="social-link linkedin" href="https://www.linkedin.com/in/rumman"><i class="bi bi-linkedin"></i> LinkedIn</a>
-    </p>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="bg-dark text-white pt-5 pb-3">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4 mb-3">
-        <h5 class="fw-bold">Md. Rumman Shahriar</h5>
-        <p class="small text-muted">Computer Science Graduate | AI & Web Developer</p>
-      </div>
-      <div class="col-md-4 mb-3">
-        <h5 class="fw-bold">Quick Links</h5>
-        <ul class="list-unstyled">
-          <li><a href="#about" class="text-white text-decoration-none">About</a></li>
-          <li><a href="#projects" class="text-white text-decoration-none">Projects</a></li>
-          <li><a href="#skills" class="text-white text-decoration-none">Skills</a></li>
-          <li><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
+    <!-- AWARDS -->
+    <section id="awards" class="section tone-3">
+      <div class="container" data-reveal>
+        <h2 class="section-title">Honors & Awards</h2>
+        <ul>
+          <li>Vice Chancellor’s List — Outstanding academic performance</li>
+          <li>Dean’s List — CGPA above 3.9 in 10 semesters</li>
+          <li>Merit-Based Scholarship — 75–100% tuition waiver</li>
+          <li>Dhaka Board General & Talent Pool Scholarships</li>
         </ul>
       </div>
-      <div class="col-md-4 mb-3">
-        <h5 class="fw-bold">Connect</h5>
-        <a href="mailto:rummanshahriarrumman@gmail.com" class="text-white me-3 fs-5"><i class="bi bi-envelope"></i></a>
-        <a href="https://github.com/RummanShahriar" class="text-white me-3 fs-5"><i class="bi bi-github"></i></a>
-        <a href="https://linkedin.com/in/rumman" class="text-white fs-5"><i class="bi bi-linkedin"></i></a>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section tone-1">
+      <div class="container" data-reveal>
+        <h2 class="section-title">Contact</h2>
+
+        <div class="about-quick contact-slim">
+          <div><strong>Email:</strong> <a class="email-purple" href="mailto:rummanshahriarrumman@gmail.com">rummanshahriarrumman@gmail.com</a></div>
+          <div><strong>Phone:</strong> +8801933264654</div>
+          <div class="contact-links">
+            <a class="social-link github" href="https://github.com/RummanShahriar" target="_blank"><i class="bi bi-github"></i> GitHub</a>
+            <a class="social-link linkedin" href="https://www.linkedin.com/in/rumman" target="_blank"><i class="bi bi-linkedin"></i> LinkedIn</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER (restored professional 3-column) -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Md. Rumman Shahriar</h4>
+        <p class="muted">Computer Science Graduate | AI & Web Developer</p>
+      </div>
+
+      <div>
+        <h5>Quick Links</h5>
+        <ul class="footer-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h5>Connect</h5>
+        <a class="contact-icon" href="mailto:rummanshahriarrumman@gmail.com"><i class="bi bi-envelope"></i></a>
+        <a class="contact-icon" href="https://github.com/RummanShahriar"><i class="bi bi-github"></i></a>
+        <a class="contact-icon" href="https://www.linkedin.com/in/rumman"><i class="bi bi-linkedin"></i></a>
       </div>
     </div>
-    <hr class="border-secondary">
-    <p class="text-center small mb-0">&copy; 2025 Md. Rumman Shahriar. All Rights Reserved.</p>
-  </div>
-</footer>
 
-<script src="script.js"></script>
+    <hr>
+    <p class="copyright">© 2025 Md. Rumman Shahriar · All rights reserved</p>
+  </footer>
+
+  <!-- PDF preview modal (optional) -->
+  <div id="pdf-modal" class="pdf-modal" aria-hidden="true">
+    <div class="pdf-backdrop"></div>
+    <div class="pdf-panel">
+      <button id="pdf-close" class="pdf-close" aria-label="Close">✕</button>
+      <iframe id="pdf-frame" src="" frameborder="0" title="Preview" ></iframe>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
