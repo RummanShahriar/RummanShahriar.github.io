@@ -1,15 +1,25 @@
-/* Hero Section */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Theme colors */
+.text-crimson { color: #DC143C; }
+.bg-light-purple { background-color: #f3e9ff; }
+.btn-crimson { background-color: #DC143C; color: white; border: none; }
+.btn-crimson:hover { background-color: #b01030; }
+
+/* Hero */
 .hero {
   height: 100vh;
   background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-              url('https://source.unsplash.com/1600x900/?technology,computer') center/cover no-repeat;
+              url('https://source.unsplash.com/1600x900/?technology,ai') center/cover no-repeat;
 }
 .hero h1 { font-size: 3rem; }
 .hero p { font-size: 1.2rem; }
 
 /* Timeline style (experience) */
 .timeline {
-  border-left: 3px solid #0d6efd;
+  border-left: 3px solid #DC143C;
   padding-left: 20px;
 }
-.timeline h5 { font-weight: bold; }
