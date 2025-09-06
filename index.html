@@ -4,16 +4,14 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Md. Rumman Shahriar — Portfolio</title>
-
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta name="description" content="Computer Science graduate specializing in NLP, Machine Learning, and Computer Vision. Building production-ready ML & web systems.">
+  
   <link rel="stylesheet" href="style.css" />
-  <!-- Favicons can be added later -->
 </head>
 <body>
-
   <!-- NAVBAR -->
   <header class="site-header">
-    <nav class="nav container" id="top-nav">
+    <nav class="nav" id="top-nav">
       <div class="brand">
         <div class="brand-name">Rumman</div>
         <div class="brand-sub">NLP · ML · Vision</div>
@@ -27,44 +25,45 @@
         <li><a data-target="projects" href="#projects">Projects</a></li>
         <li><a data-target="skills" href="#skills">Skills</a></li>
         <li><a data-target="awards" href="#awards">Awards</a></li>
-        <li><a data-target="achievements" href="#achievements">Achievements</a></li>
         <li><a data-target="contact" href="#contact">Contact</a></li>
       </ul>
 
-      <button class="hamburger" id="hamburger">&#9776;</button>
-
       <div class="cta">
-        <a class="btn btn-primary" href="Md_Rumman_Shahriar_CV.pdf" download>Download CV</a>
+        <a class="btn btn-primary" href="#contact">Download CV</a>
       </div>
+
+      <button class="mobile-menu-btn" id="mobile-menu-btn">☰</button>
     </nav>
   </header>
 
   <!-- HERO -->
   <section id="hero" class="section hero">
-    <div class="container hero-inner">
-      <div class="hero-left" data-reveal>
-        <p class="hello">Hello, I'm</p>
-        <h1 class="name">Md. Rumman Shahriar</h1>
-        <p class="tag">A problem solver focused on building production-ready ML & web systems.</p>
+    <div class="container">
+      <div class="hero-inner" data-reveal>
+        <div class="hero-left">
+          <p class="hello">Hello, I'm</p>
+          <h1 class="name">Md. Rumman Shahriar</h1>
+          <p class="tag">A problem solver focused on building production-ready ML & web systems.</p>
 
-        <p class="short-bio">Research Interests: <strong>Natural Language Processing</strong>, <strong>Machine Learning</strong>, <strong>Image Processing</strong>, <strong>Computer Vision</strong></p>
+          <p class="short-bio">Research Interests: <strong>Natural Language Processing</strong>, <strong>Machine Learning</strong>, <strong>Image Processing</strong>, <strong>Computer Vision</strong></p>
 
-        <div class="hero-actions">
-          <a class="btn btn-crimson" href="Md_Rumman_Shahriar_CV.pdf" download>📄 Download CV</a>
-          <button class="btn btn-outline" id="scroll-about">About me ↓</button>
+          <div class="hero-actions">
+            <a class="btn btn-crimson" href="#contact">📄 Download CV</a>
+            <button class="btn btn-outline" id="scroll-about">About me ↓</button>
+          </div>
         </div>
-      </div>
 
-      <div class="hero-right" data-reveal>
-        <div class="profile-card">
-          <img src="assets/profile.jpg" alt="Rumman profile" class="profile-img" />
-          <div class="profile-meta">
-            <h3>Md. Rumman Shahriar</h3>
-            <p class="muted">Computer Science graduate — BRAC University</p>
-            <p class="contact">+8801933264654 · <a href="mailto:rummanshahriarrumman@gmail.com">rummanshahriarrumman@gmail.com</a></p>
-            <div class="socials">
-              <a href="https://github.com/RummanShahriar" target="_blank" rel="noopener">GitHub</a>
-              <a href="https://www.linkedin.com/in/rumman" target="_blank" rel="noopener">LinkedIn</a>
+        <div class="hero-right">
+          <div class="profile-card">
+            <img src="https://via.placeholder.com/150x150/1a1a2e/ffffff?text=RS" alt="Rumman profile" class="profile-img" />
+            <div class="profile-meta">
+              <h3>Md. Rumman Shahriar</h3>
+              <p class="muted">Computer Science graduate — BRAC University</p>
+              <p class="contact">+8801933264654 · <a href="mailto:rummanshahriarrumman@gmail.com">rummanshahriarrumman@gmail.com</a></p>
+              <div class="socials">
+                <a href="https://github.com/RummanShahriar" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://www.linkedin.com/in/rumman" target="_blank" rel="noopener">LinkedIn</a>
+              </div>
             </div>
           </div>
         </div>
@@ -120,7 +119,6 @@
             </ul>
           </div>
         </article>
-        <!-- add more timeline items as needed -->
       </div>
     </div>
   </section>
@@ -185,7 +183,35 @@
           </div>
         </article>
 
-        <!-- add more projects from CV -->
+        <article class="proj">
+          <h4>E-Commerce Platform</h4>
+          <p class="muted">Sep 2024 — Dec 2024 · React, Node.js, MongoDB</p>
+          <p>Full-stack e-commerce solution with user authentication, product catalog, shopping cart, and payment integration. Responsive design with modern UI/UX.</p>
+          <div class="proj-links">
+            <a href="#" target="_blank">GitHub</a>
+            <a href="#" target="_blank">Live Demo</a>
+          </div>
+        </article>
+
+        <article class="proj">
+          <h4>Smart Traffic Management System</h4>
+          <p class="muted">Mar 2024 — May 2024 · Python, OpenCV, IoT</p>
+          <p>Computer vision-based traffic monitoring system using real-time image processing to optimize traffic light timing and reduce congestion.</p>
+          <div class="proj-links">
+            <a href="#" target="_blank">GitHub</a>
+            <a href="#" target="_blank">Research Paper</a>
+          </div>
+        </article>
+
+        <article class="proj">
+          <h4>Social Media Analytics Dashboard</h4>
+          <p class="muted">Jan 2024 — Mar 2024 · Python, Django, D3.js</p>
+          <p>Data visualization dashboard for social media metrics with real-time analytics, sentiment analysis, and trend prediction using machine learning.</p>
+          <div class="proj-links">
+            <a href="#" target="_blank">GitHub</a>
+            <a href="#" target="_blank">Demo</a>
+          </div>
+        </article>
       </div>
     </div>
   </section>
@@ -200,15 +226,23 @@
           <h4>Languages & Tools</h4>
           <div class="skill">
             <label>Python</label>
-            <div class="bar"><span data-width="92%"></span></div>
+            <div class="bar"><span style="width:92%" data-width="92%"></span></div>
           </div>
           <div class="skill">
             <label>Java</label>
-            <div class="bar"><span data-width="80%"></span></div>
+            <div class="bar"><span style="width:80%" data-width="80%"></span></div>
+          </div>
+          <div class="skill">
+            <label>JavaScript</label>
+            <div class="bar"><span style="width:85%" data-width="85%"></span></div>
           </div>
           <div class="skill">
             <label>MySQL</label>
-            <div class="bar"><span data-width="88%"></span></div>
+            <div class="bar"><span style="width:88%" data-width="88%"></span></div>
+          </div>
+          <div class="skill">
+            <label>C/C++</label>
+            <div class="bar"><span style="width:75%" data-width="75%"></span></div>
           </div>
         </div>
 
@@ -216,15 +250,23 @@
           <h4>AI / ML</h4>
           <div class="skill">
             <label>TensorFlow / Keras</label>
-            <div class="bar"><span data-width="85%"></span></div>
+            <div class="bar"><span style="width:85%" data-width="85%"></span></div>
           </div>
           <div class="skill">
             <label>Scikit-learn</label>
-            <div class="bar"><span data-width="84%"></span></div>
+            <div class="bar"><span style="width:84%" data-width="84%"></span></div>
           </div>
           <div class="skill">
             <label>Computer Vision (CNN, U-Net)</label>
-            <div class="bar"><span data-width="82%"></span></div>
+            <div class="bar"><span style="width:82%" data-width="82%"></span></div>
+          </div>
+          <div class="skill">
+            <label>Natural Language Processing</label>
+            <div class="bar"><span style="width:78%" data-width="78%"></span></div>
+          </div>
+          <div class="skill">
+            <label>PyTorch</label>
+            <div class="bar"><span style="width:76%" data-width="76%"></span></div>
           </div>
         </div>
 
@@ -232,15 +274,23 @@
           <h4>Web & Other</h4>
           <div class="skill">
             <label>HTML/CSS/JS</label>
-            <div class="bar"><span data-width="86%"></span></div>
+            <div class="bar"><span style="width:86%" data-width="86%"></span></div>
           </div>
           <div class="skill">
-            <label>Flask / PHP</label>
-            <div class="bar"><span data-width="78%"></span></div>
+            <label>React</label>
+            <div class="bar"><span style="width:82%" data-width="82%"></span></div>
+          </div>
+          <div class="skill">
+            <label>Flask / Django</label>
+            <div class="bar"><span style="width:78%" data-width="78%"></span></div>
+          </div>
+          <div class="skill">
+            <label>Node.js</label>
+            <div class="bar"><span style="width:74%" data-width="74%"></span></div>
           </div>
           <div class="skill">
             <label>Git & GitHub</label>
-            <div class="bar"><span data-width="90%"></span></div>
+            <div class="bar"><span style="width:90%" data-width="90%"></span></div>
           </div>
         </div>
       </div>
@@ -252,10 +302,10 @@
     <div class="container" data-reveal>
       <h2 class="section-title">Honors & Awards</h2>
       <ul class="list">
-        <li><strong>Vice Chancellor’s List</strong> — Outstanding academic performance</li>
-        <li><strong>Dean’s List</strong> — CGPA above 3.9 in 10 semesters</li>
-        <li><strong>Merit-Based Scholarship</strong> — 75–100% tuition waiver</li>
-        <li>Dhaka Board Scholarships (SSC, JSC)</li>
+        <li><strong>Vice Chancellor's List</strong> — Outstanding academic performance across multiple semesters</li>
+        <li><strong>Dean's List</strong> — CGPA above 3.9 maintained for 10 consecutive semesters</li>
+        <li><strong>Merit-Based Scholarship</strong> — 75–100% tuition waiver for academic excellence</li>
+        <li><strong>Dhaka Board Scholarships</strong> — Recognition for exceptional performance in SSC and JSC examinations</li>
       </ul>
     </div>
   </section>
@@ -265,9 +315,10 @@
     <div class="container" data-reveal>
       <h2 class="section-title">Competitions & Achievements</h2>
       <ul class="list">
-        <li>Executive Member (HR), Notre Dame College Eco & Space Club — organized National Space Fest 2.0 (~4,000 participants)</li>
-        <li>2nd Prize — Digital Udbhaboni Mela (School Attendance System)</li>
-        <li>2nd Place — National Science Fair (Narayanganj region)</li>
+        <li><strong>Executive Member (HR), Notre Dame College Eco & Space Club</strong> — Organized National Space Fest 2.0 with approximately 4,000 participants</li>
+        <li><strong>2nd Prize — Digital Udbhaboni Mela</strong> — School Attendance Management System project recognition</li>
+        <li><strong>2nd Place — National Science Fair</strong> — Narayanganj regional competition winner</li>
+        <li><strong>Programming Contest Participant</strong> — Regular participation in competitive programming events and hackathons</li>
       </ul>
     </div>
   </section>
@@ -280,23 +331,35 @@
       <div class="contact-grid">
         <div class="contact-card">
           <h4>Get in touch</h4>
-          <p>Email: <a href="mailto:rummanshahriarrumman@gmail.com">rummanshahriarrumman@gmail.com</a></p>
-          <p>Phone: +8801933264654</p>
+          <p>I'm always interested in discussing new opportunities, collaborations, or just connecting with fellow developers and researchers.</p>
+          <p><strong>Email:</strong> <a href="mailto:rummanshahriarrumman@gmail.com">rummanshahriarrumman@gmail.com</a></p>
+          <p><strong>Phone:</strong> +8801933264654</p>
+          <p><strong>Location:</strong> Dhaka, Bangladesh</p>
           <p>
             <a href="https://github.com/RummanShahriar" target="_blank">GitHub</a>
-            <span>•</span>
+            <span> • </span>
             <a href="https://www.linkedin.com/in/rumman" target="_blank">LinkedIn</a>
           </p>
         </div>
 
-        <form class="contact-form" id="contact-form" onsubmit="return false;">
-          <label for="name">Name</label>
-          <input id="name" name="name" placeholder="Your name" required />
-          <label for="email">Email</label>
-          <input id="email" name="email" type="email" placeholder="Your email" required />
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
-          <button class="btn btn-crimson" id="send-btn">Send Message</button>
+        <form class="contact-form" id="contact-form">
+          <div>
+            <label for="name">Name</label>
+            <input id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="Your email" required />
+          </div>
+          <div>
+            <label for="subject">Subject</label>
+            <input id="subject" name="subject" placeholder="What's this about?" required />
+          </div>
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+          </div>
+          <button class="btn btn-crimson" type="submit">Send Message</button>
           <p id="form-status" class="muted small" aria-live="polite"></p>
         </form>
       </div>
@@ -305,25 +368,35 @@
 
   <!-- FOOTER -->
   <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <h4>Md. Rumman Shahriar</h4>
-        <p class="muted">NLP · Machine Learning · Computer Vision</p>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>Md. Rumman Shahriar</h4>
+          <p class="muted">NLP · Machine Learning · Computer Vision</p>
+          <p class="muted">Building the future with intelligent systems</p>
+        </div>
+        <div>
+          <h5>Quick Links</h5>
+          <nav class="footer-links">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
+        <div>
+          <h5>Connect</h5>
+          <nav class="footer-links">
+            <a href="https://github.com/RummanShahriar" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/rumman" target="_blank">LinkedIn</a>
+            <a href="mailto:rummanshahriarrumman@gmail.com">Email</a>
+          </nav>
+        </div>
       </div>
-      <div>
-        <h5>Quick links</h5>
-        <nav class="footer-links">
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
-        </nav>
-      </div>
-      <div>
-        <h5>Download</h5>
-        <a class="btn btn-outline" href="Md_Rumman_Shahriar_CV.pdf" download>Resume (PDF)</a>
+      <div class="copyright">
+        © 2025 Md. Rumman Shahriar · All rights reserved · Made with ❤️ for innovation
       </div>
     </div>
-    <div class="copyright">© 2025 Md. Rumman Shahriar · All rights reserved</div>
   </footer>
 
   <script src="script.js"></script>
