@@ -1,155 +1,338 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shreya Adrita Banik | Portfolio</title>
-  <link rel="stylesheet" href="assets/css/styles.css">
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Md. Rumman Shahriar — Portfolio</title>
+  <meta name="description" content="Md. Rumman Shahriar — NLP, ML & Computer Vision. Portfolio, projects, education and contact." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="assets/favicon.png" />
 </head>
 <body>
-  <!-- Navbar -->
-  <header id="header">
-    <nav class="navbar">
-      <a href="#home" class="logo">Shreya</a>
-      <div class="nav-toggle" id="nav-toggle"><i class="bx bx-menu"></i></div>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="#home" class="nav-link active">Home</a></li>
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#work" class="nav-link">Experience</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#research" class="nav-link">Research</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
+
+  <!-- NAVBAR -->
+  <header class="site-header" role="banner">
+    <div class="container nav">
+      <div class="brand" aria-hidden="false">
+        <button id="mobile-toggle" class="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+          <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M0 1.5H20M0 7H20M0 12.5H20" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+        </button>
+        <div class="brand-info">
+          <div class="brand-name">Rumman</div>
+          <div class="brand-sub">NLP · ML · Vision</div>
+        </div>
+      </div>
+
+      <ul class="nav-links" id="nav-links" role="navigation">
+        <li><a data-target="hero" href="#hero" class="active">Home</a></li>
+        <li><a data-target="about" href="#about">About</a></li>
+        <li><a data-target="experience" href="#experience">Experience</a></li>
+        <li><a data-target="education" href="#education">Education</a></li>
+        <li><a data-target="projects" href="#projects">Projects</a></li>
+        <li><a data-target="skills" href="#skills">Skills</a></li>
+        <li><a data-target="awards" href="#awards">Awards</a></li>
+        <li><a data-target="contact" href="#contact">Contact</a></li>
       </ul>
-    </nav>
+
+      <div class="cta">
+        <a class="btn btn-primary" href="Md_Rumman_Shahriar_CV.pdf" download aria-label="Download CV">Download CV</a>
+      </div>
+    </div>
   </header>
 
-  <!-- Home -->
-  <section id="home" class="section home">
-    <div class="container home-container">
-      <div class="home-text">
-        <h1>Hello, I'm <span>Shreya Adrita Banik</span></h1>
-        <h3>A passionate problem solver driving impactful change through creative projects.</h3>
-        <div class="home-btns">
-          <a href="assets/pdf/Shreya_CV.pdf" download class="btn">Download CV</a>
-          <a href="mailto:shreyaadrita108@gmail.com" class="btn-outline">shreyaadrita108@gmail.com</a>
-        </div>
-        <div class="socials">
-          <a href="https://github.com/shreyaadritabanik" target="_blank"><i class="bx bxl-github"></i></a>
-          <a href="https://www.linkedin.com/in/shreya-adrita-banik-027b62301" target="_blank"><i class="bx bxl-linkedin"></i></a>
+  <!-- HERO -->
+  <main>
+  <section id="hero" class="section hero" tabindex="-1" aria-labelledby="hero-heading">
+    <div class="container hero-inner" data-reveal>
+      <div class="hero-left">
+        <p class="hello">Hello, I'm</p>
+        <h1 id="hero-heading" class="name">Md. Rumman Shahriar</h1>
+        <p class="tag">A problem solver focused on building production-ready ML & web systems.</p>
+
+        <p class="short-bio">Research Interests: <strong>Natural Language Processing</strong>, <strong>Machine Learning</strong>, <strong>Image Processing</strong>, <strong>Computer Vision</strong></p>
+
+        <div class="hero-actions">
+          <a class="btn btn-crimson" href="Md_Rumman_Shahriar_CV.pdf" download>📄 Download CV</a>
+          <button class="btn btn-outline" id="scroll-about" data-target="about">About me ↓</button>
         </div>
       </div>
-      <div class="home-img">
-        <img src="assets/img/perfil.png" alt="Profile">
-      </div>
+
+      <aside class="hero-right" aria-label="Profile card">
+        <div class="profile-card">
+          <img src="assets/profile.jpg" alt="Rumman Shahriar profile photo" class="profile-img" />
+          <div class="profile-meta">
+            <h3>Md. Rumman Shahriar</h3>
+            <p class="muted">Computer Science graduate — BRAC University</p>
+            <p class="contact">+8801933264654 · <a href="mailto:rummanshahriarrumman@gmail.com">rummanshahriarrumman@gmail.com</a></p>
+            <div class="socials">
+              <a href="https://github.com/RummanShahriar" target="_blank" rel="noopener">GitHub</a>
+              <a href="https://www.linkedin.com/in/rumman" target="_blank" rel="noopener">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+      </aside>
     </div>
   </section>
 
-  <!-- About -->
-  <section id="about" class="section about">
+  <!-- ABOUT -->
+  <section id="about" class="section about" tabindex="-1" data-reveal>
     <div class="container">
-      <h2>About Me</h2>
-      <p>
-        I’m a Computer Science and Engineering graduate passionate about building innovative solutions. 
-        My research interests lie in NLP, LLM Security, Image Processing, and Machine Learning.
-      </p>
-    </div>
-  </section>
+      <h2 class="section-title">About Me</h2>
+      <div class="split">
+        <div class="split-left">
+          <p>I am a Computer Science graduate with a strong foundation in data analysis, machine learning and software engineering. I enjoy problem solving, building end-to-end systems, and producing reproducible research and deployable solutions.</p>
 
-  <!-- Work Experience -->
-  <section id="work" class="section work">
-    <div class="container">
-      <h2>Work Experience</h2>
-      <!-- Add your work timeline here -->
-    </div>
-  </section>
-
-  <!-- Skills -->
-  <section id="skills" class="section skills">
-    <div class="container">
-      <h2>Skills</h2>
-      <div class="skills-grid">
-        <div class="skill-card">
-          <h3>Microsoft Office & Productivity</h3>
-          <ul>
-            <li>Excel</li><li>PowerPoint</li><li>Word</li><li>Slack</li>
+          <ul class="bullets">
+            <li>Strong background in ML/Deep Learning & Computer Vision</li>
+            <li>Experienced building web apps (Flask, MySQL) and front-end prototypes</li>
+            <li>Reliable collaborator — documentation, tests, and clean code</li>
           </ul>
         </div>
-        <div class="skill-card">
-          <h3>Languages</h3>
-          <ul><li>Python</li><li>Java</li><li>MySQL</li></ul>
-        </div>
-        <div class="skill-card">
-          <h3>Web Development</h3>
-          <ul><li>HTML</li><li>CSS</li><li>Bootstrap</li><li>PHP</li><li>Flask</li></ul>
-        </div>
-        <div class="skill-card">
-          <h3>AI & ML</h3>
-          <ul><li>Scikit-learn</li><li>Pandas</li><li>NumPy</li><li>Matplotlib</li></ul>
-        </div>
-        <div class="skill-card">
-          <h3>Neural Networks</h3>
-          <ul><li>TensorFlow</li><li>Keras</li></ul>
-        </div>
-        <div class="skill-card">
-          <h3>Computer Vision</h3>
-          <ul><li>CNNs</li><li>U-Net</li><li>Image Processing</li></ul>
-        </div>
-        <div class="skill-card">
-          <h3>NLP</h3>
-          <ul><li>NLTK</li><li>Text Classification</li><li>Parsing</li></ul>
-        </div>
-        <div class="skill-card">
-          <h3>Tools</h3>
-          <ul><li>Git</li><li>GitHub</li><li>VS Code</li><li>LaTeX</li></ul>
+
+        <div class="split-right">
+          <h4>Research interests</h4>
+          <p class="muted">NLP · LLM safety & bias detection · Image Processing · Computer Vision</p>
+
+          <h4>Quick facts</h4>
+          <ul class="mini-list">
+            <li>BRAC University — BSc Computer Science (2021–2025)</li>
+            <li>CGPA: <strong>3.96 / 4.00</strong></li>
+            <li>Vice Chancellor's List; Dean's List</li>
+          </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Projects -->
-  <section id="projects" class="section projects">
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section experience" tabindex="-1" data-reveal>
     <div class="container">
-      <h2>Projects</h2>
-      <div class="project-card">
-        <h3>Hospital Management System</h3>
-        <p>Designed and developed a web app for managing patients, doctors, appointments, and billing.</p>
-        <div class="project-links">
-          <a href="#" class="btn-small">GitHub</a>
-          <a href="#" class="btn-small">Documentation</a>
+      <h2 class="section-title">Experience</h2>
+
+      <div class="timeline">
+        <article class="timeline-item" aria-labelledby="tutor-title">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-body">
+            <h3 id="tutor-title">Student Tutor — BRAC University</h3>
+            <p class="period">Oct 2024 — May 2025 | Dhaka, Bangladesh</p>
+            <ul>
+              <li>Assisted students in CSE110: Programming Language I</li>
+              <li>Conducted one-on-one and group sessions to improve problem-solving and coding skills</li>
+              <li>Guided students on assessment strategies, debugging techniques, and writing efficient code</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section education" tabindex="-1" data-reveal>
+    <div class="container">
+      <h2 class="section-title">Education</h2>
+      <div class="cards">
+        <div class="card-edu">
+          <h4>B.Sc. in Computer Science</h4>
+          <p class="muted">BRAC University — 2021–2025</p>
+          <p>CGPA: <strong>3.96 / 4.00</strong></p>
+        </div>
+        <div class="card-edu">
+          <h4>HSC</h4>
+          <p class="muted">Notre Dame College — 2020</p>
+          <p>GPA: <strong>5.00 / 5.00</strong></p>
+        </div>
+        <div class="card-edu">
+          <h4>SSC</h4>
+          <p class="muted">Adarsha School — 2018</p>
+          <p>GPA: <strong>5.00 / 5.00</strong></p>
         </div>
       </div>
-      <!-- Add more projects in the same format -->
     </div>
   </section>
 
-  <!-- Research -->
-  <section id="research" class="section research">
+  <!-- PROJECTS -->
+  <section id="projects" class="section projects" tabindex="-1" data-reveal>
     <div class="container">
-      <h2>Research</h2>
-      <p>Current focus: NLP, LLM security, Adversarial ML, Image Processing, IoMT.</p>
-    </div>
-  </section>
+      <h2 class="section-title">Selected Projects</h2>
 
-  <!-- Contact -->
-  <section id="contact" class="section contact">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <div class="contact-links">
-        <a href="mailto:shreyaadrita108@gmail.com" class="btn-outline">Email</a>
-        <a href="https://www.linkedin.com/in/shreya-adrita-banik-027b62301" target="_blank"><i class="bx bxl-linkedin"></i></a>
-        <a href="https://github.com/shreyaadritabanik" target="_blank"><i class="bx bxl-github"></i></a>
+      <div class="grid">
+        <article class="proj">
+          <h4>Hospital Management System</h4>
+          <p class="muted">Oct 2024 — Feb 2025 · Flask, MySQL, HTML/CSS, Vercel, Figma</p>
+          <p>Designed and built a web application for managing patients, doctors, appointments, and billing. Backend in Flask & MySQL, frontend responsive and deployed on Vercel.</p>
+          <div class="proj-links">
+            <a href="https://github.com/RummanShahriar/Hospital_Management_System" target="_blank" rel="noopener">GitHub</a>
+            <a href="#" target="_blank" rel="noopener">Documentation</a>
+          </div>
+        </article>
+
+        <article class="proj">
+          <h4>Bangla Handwritten Digit Recognition</h4>
+          <p class="muted">Apr 2025 — Jun 2025 · TensorFlow / Keras</p>
+          <p>Built and trained a CNN to classify Bangla handwritten digits. Performed preprocessing and hyperparameter tuning to maximize accuracy.</p>
+          <div class="proj-links">
+            <a href="https://github.com/RummanShahriar/An-Efficient-Deep-Learning-Model-for-BanglaHandwritten-Digit-Recognition" target="_blank" rel="noopener">GitHub</a>
+            <a href="#" target="_blank" rel="noopener">Paper</a>
+          </div>
+        </article>
+
+        <article class="proj">
+          <h4>Breast Ultrasound Segmentation & Classification</h4>
+          <p class="muted">Jan 2025 — Jul 2025 · U-Net</p>
+          <p>Applied U-Net for segmentation and classification of breast ultrasound images. Pipeline includes preprocessing, augmentation, and evaluation.</p>
+          <div class="proj-links">
+            <a href="https://github.com/RummanShahriar/Breast-Ultrasound-Image-Segmentation-Classification" target="_blank" rel="noopener">GitHub</a>
+            <a href="#" target="_blank" rel="noopener">Architecture</a>
+          </div>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Shreya. All rights reserved.</p>
+  <!-- SKILLS -->
+  <section id="skills" class="section skills" tabindex="-1" data-reveal>
+    <div class="container">
+      <h2 class="section-title">Technical Skills</h2>
+
+      <div class="skill-groups">
+        <div class="skill-col">
+          <h4>Languages & Tools</h4>
+          <div class="skill">
+            <label>Python</label>
+            <div class="bar"><span data-target="92%"></span></div>
+          </div>
+          <div class="skill">
+            <label>Java</label>
+            <div class="bar"><span data-target="80%"></span></div>
+          </div>
+          <div class="skill">
+            <label>MySQL</label>
+            <div class="bar"><span data-target="88%"></span></div>
+          </div>
+        </div>
+
+        <div class="skill-col">
+          <h4>AI / ML</h4>
+          <div class="skill">
+            <label>TensorFlow / Keras</label>
+            <div class="bar"><span data-target="85%"></span></div>
+          </div>
+          <div class="skill">
+            <label>Scikit-learn</label>
+            <div class="bar"><span data-target="84%"></span></div>
+          </div>
+          <div class="skill">
+            <label>Computer Vision (CNN, U-Net)</label>
+            <div class="bar"><span data-target="82%"></span></div>
+          </div>
+        </div>
+
+        <div class="skill-col">
+          <h4>Web & Other</h4>
+          <div class="skill">
+            <label>HTML/CSS/JS</label>
+            <div class="bar"><span data-target="86%"></span></div>
+          </div>
+          <div class="skill">
+            <label>Flask / PHP</label>
+            <div class="bar"><span data-target="78%"></span></div>
+          </div>
+          <div class="skill">
+            <label>Git & GitHub</label>
+            <div class="bar"><span data-target="90%"></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AWARDS -->
+  <section id="awards" class="section awards" tabindex="-1" data-reveal>
+    <div class="container">
+      <h2 class="section-title">Honors & Awards</h2>
+      <ul class="list">
+        <li><strong>Vice Chancellor’s List</strong> — Outstanding academic performance</li>
+        <li><strong>Dean’s List</strong> — CGPA above 3.9 in 10 semesters</li>
+        <li><strong>Merit-Based Scholarship</strong> — 75–100% tuition waiver</li>
+        <li>Dhaka Board Scholarships (SSC, JSC)</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section id="achievements" class="section achievements" tabindex="-1" data-reveal>
+    <div class="container">
+      <h2 class="section-title">Competitions & Achievements</h2>
+      <ul class="list">
+        <li>Executive Member (HR), Notre Dame College Eco & Space Club — organized National Space Fest 2.0 (~4,000 participants)</li>
+        <li>2nd Prize — Digital Udbhaboni Mela (School Attendance System)</li>
+        <li>2nd Place — National Science Fair (Narayanganj region)</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact" tabindex="-1" data-reveal>
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h4>Get in touch</h4>
+          <p>Email: <a href="mailto:rummanshahriarrumman@gmail.com">rummanshahriarrumman@gmail.com</a></p>
+          <p>Phone: +8801933264654</p>
+          <p>
+            <a href="https://github.com/RummanShahriar" target="_blank" rel="noopener">GitHub</a>
+            <span>•</span>
+            <a href="https://www.linkedin.com/in/rumman" target="_blank" rel="noopener">LinkedIn</a>
+          </p>
+        </div>
+
+        <form class="contact-form" id="contact-form">
+          <label for="name">Name</label>
+          <input id="name" name="name" placeholder="Your name" required />
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="Your email" required />
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+          <div class="form-actions">
+            <button class="btn btn-crimson" id="send-btn" type="submit">Send Message</button>
+            <button class="btn btn-outline" id="clear-btn" type="button">Clear</button>
+          </div>
+          <p id="form-status" class="muted small" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-grid">
+      <div>
+        <h4>Md. Rumman Shahriar</h4>
+        <p class="muted">NLP · Machine Learning · Computer Vision</p>
+      </div>
+      <div>
+        <h5>Quick links</h5>
+        <nav class="footer-links" aria-label="Footer quick links">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+      <div>
+        <h5>Download</h5>
+        <a class="btn btn-outline" href="Md_Rumman_Shahriar_CV.pdf" download>Resume (PDF)</a>
+      </div>
+    </div>
+    <div class="copyright">© 2025 Md. Rumman Shahriar · All rights reserved</div>
   </footer>
 
-  <script src="assets/js/script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
