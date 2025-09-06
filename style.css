@@ -1,9 +1,15 @@
 /* Hero Section */
 .hero {
   height: 100vh;
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-              url('https://source.unsplash.com/1600x900/?technology,coding') center/cover no-repeat;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+              url('https://source.unsplash.com/1600x900/?technology,computer') center/cover no-repeat;
 }
-.hero img {
-  border: 4px solid #fff;
+.hero h1 { font-size: 3rem; }
+.hero p { font-size: 1.2rem; }
+
+/* Timeline style (experience) */
+.timeline {
+  border-left: 3px solid #0d6efd;
+  padding-left: 20px;
 }
+.timeline h5 { font-weight: bold; }
